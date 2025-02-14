@@ -18,7 +18,7 @@
 
 ## 說明
 將中文短句分為下列8個分類
-'''
+```
     0: "平淡語氣",
     1: "關切語調",
     2: "開心語調",
@@ -27,12 +27,13 @@
     5: "疑問語調",
     6: "驚奇語調",
     7: "厭惡語調"
-'''
+
 由於資料只有4000筆
 num_train_epochs 從 3 調整為 5 增加訓練輪數
 per_device_train_batch_size 從 32 調整為 16 依GPU記憶體大小調整
 gradient_accumulation_steps 從 2 調整為 3 由於batch size 較小
 warmup_steps 從 100 調整為 500 讓模型前期學習穩定
+```
 
 ## 成果
 [NLP-中文短句情緒分類](https://youtu.be/9sgoz7YoPzU)
